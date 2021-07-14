@@ -72,7 +72,7 @@ body{
 }
 #back{
 	background: url(img/dots.png) no-repeat, url(img/background.png) no-repeat;
-	background-position: 42vw 30vh, 0px 25vh;
+	background-position: 42vw 220px, 0px 170px;
 	background-size: 26vh, auto;
 	/*height: 100vh;*/
 }
@@ -128,7 +128,7 @@ body{
 	background: #FFFFFF;
 }
 #package .d-flex{
-	width: 70%;
+	width: 630px;
 	margin: 0 auto;
 }
 #package h2{
@@ -298,8 +298,17 @@ body{
 	opacity: 0.5;
 }
 
+@media (max-width: 991px){
+	.social .nav-link{
+		padding: 0px !important;
+	}
+	#package .d-flex{
+		width: 100%;
+	}
+}
 
-@media (max-width: 768px){
+
+@media (max-width: 767px){
 	#back{
 		background: url(img/dots.png) no-repeat, url(img/background.png) no-repeat;
 		background-position: 38vw 50vw, -10px 30vw;
@@ -309,9 +318,9 @@ body{
 	#intro-left{
 		margin-top: 18vw;
 	}
-	/*#package .d-flex{
-		width: 100%;
-	}*/
+	#package .d-flex{
+		width: 90%;
+	}
 	.packages{
 		/*margin-top: 20px;*/
 		margin: 20px auto 0px auto;
@@ -332,10 +341,13 @@ body{
 	.social{
 		width: 50%;
 	}
+	.social .nav-link{
+		padding: 0px 5px !important;
+	}
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 	#back{
 		background: url(img/dots.png) no-repeat, url(img/background.png) no-repeat;
 		background-position: 38vw 53vw, -10px 30vw;
@@ -349,7 +361,7 @@ body{
 		background: #FFFFFF;
 	}
 	#package .d-flex{
-		width: 100%;
+		width: 90%;
 	}
 	#package a{
 		margin-top: 0;
